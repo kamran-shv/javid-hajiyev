@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Playfair+Display&display=swap');
+
+:root {
+    --sans: 'Open Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/pexels-ismail-o-ukav-7805616.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    padding: 50px;
+    width: 600px;
+    height: 900px;
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    border: 1px solid dimgray;
+}
+
+a{
+    width: 100%;
+}
+
+.main-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+}
+
+.head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+p{
+    background-color: rgba(255,255,255,70%);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-family: var(--sans);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.divider{
+    width: 80%;
+    height: 2px;
+    background-color: orange;
+}
+
+.head>img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid rgba(255,255,255,40%);
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 22px;
+    font-size: 35px;
+    color: white;
+}
+
+.btn{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-radius: 100px;
+    border: 0;
+    font-family: var(--sans);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    border-radius: 100px;
+    border: 0;
+    font-family: var(--sans);
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+.bg-wp{
+    color: white;
+    background-color: #55CD6C;
+}
+
+.bg-tk{
+    color: white;
+    background-color: #29172f;
+}
+
+.bg-in{
+    color: white;
+    background-color: #970033;
+}
+
+.bg-ml{
+    color: white;
+    background-color: #001c67;
+}
