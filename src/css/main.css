@@ -108,7 +108,7 @@ i{
     transition: 0.2s ease-in-out;
 }
 
-.btn:hover{
+.btn{
     position: relative;
     width: 100%;
     height: 60px;
@@ -118,8 +118,12 @@ i{
     font-size: 20px;
     font-weight: 800;
     letter-spacing: 1px;
+    transition: 0.2s ease-in-out;
+}
+
+.scale:hover{
     cursor: pointer;
-    transform: scale(110%);
+    transform: scale(105%);
 }
 
 .bg-wp{
@@ -187,10 +191,25 @@ i{
         height: 60px;
     }
 
+    .scale:hover{
+        transform: none;
+        animation: anim 0.2s ease-in-out;
+    }
+
+
 
     i{
         font-size: 35px;
     }
 
 
+}
+
+@keyframes anim {
+    50%{
+        transform: scale(105%);
+    }
+    100%{
+        transform: scale(100%);
+    }
 }
