@@ -165,7 +165,7 @@ i{
         gap: 30px;
     }
 
-    footer{
+    .footer{
         gap: 20px;
     }
 
@@ -191,4 +191,6 @@ i{
     i{
         font-size: 35px;
     }
+
+
 }
