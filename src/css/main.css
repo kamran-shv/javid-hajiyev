@@ -14,7 +14,6 @@
 
 
 .background{
-    padding: 40px 0;
     width: 100vw;
     min-height: 100vh;
     background-image: url("../img/pexels-ismail-o-ukav-7805616.jpg");
@@ -28,9 +27,8 @@
 .content{
     position: relative;
     padding: 50px;
+    height: 100%;
     width: 60%;
-    height: max-content;
-    border-radius: 30px;
     backdrop-filter: blur(8px);
     border: 2px solid rgba(255,255,255,5%);
 }
@@ -46,7 +44,7 @@ a{
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    gap: 20px;
+    gap: 10px;
 }
 
 .head{
@@ -75,8 +73,8 @@ a{
 }
 
 .head>img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 10px solid rgba(255,255,255,40%);
 }
@@ -90,19 +88,6 @@ i{
     color: white;
 }
 
-.btn{
-    position: relative;
-    width: 100%;
-    height: 60px;
-    border-radius: 100px;
-    border: 0;
-    font-family: var(--sans);
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    transition: 0.2s ease-in-out;
-}
 
 .btn{
     position: relative;
@@ -148,7 +133,7 @@ i{
 }
 
 .tours{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -261,8 +246,9 @@ i{
     transform: translateY(-50%);
 }
 
-
-
+.tours .btn{
+    animation: colorize 2.2s infinite;
+}
 
 
 
@@ -285,15 +271,38 @@ i{
     }
 
     .head{
-        gap: 30px;
+        gap: 20px;
     }
 
     .footer{
         gap: 20px;
     }
 
+    .horison-img{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tour-title{
+        font-size: 25px;
+    }
+
+
+
+    .tour-thrd-title{
+        font-size: 19px;
+    }
+
+    .tour-content{
+        line-height: 26px;
+        font-size: 18px;
+    }
+
+    .img{
+        width: 100%;
+    }
     .content{
-        padding: 10px 10px 100px 10px;
+        padding: 5px 10px 100px 10px;
         width: 100%;
         height: max-content;
         border-radius: 0;
@@ -310,6 +319,11 @@ i{
         height: 60px;
     }
 
+    .tours .btn{
+        font-size: 15px;
+    }
+
+
     .scale:hover{
         transform: none;
     }
@@ -317,7 +331,7 @@ i{
     .title{
         text-align: left;
         padding: 20px 20px;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     i{
@@ -325,4 +339,13 @@ i{
     }
 
 
+}
+
+@keyframes colorize {
+    50%{
+        background: #fb5e00;
+    }
+    100%{
+        background: #55CD6C;
+    }
 }
