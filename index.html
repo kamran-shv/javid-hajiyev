@@ -13,6 +13,23 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="banner">
+    <div class="banner-content">
+        <input id="name" type="text" placeholder="Имя и Фамилия">
+        <input id="data" type="date" placeholder="Дата">
+        <input id="value" type="number" placeholder="Количество гостей">
+        <input id="mob" type="tel" placeholder="Мобильный номер">
+        <input id="mail" type="email" placeholder="Email">
+        <button id="sendForm" class="btn bg-ml btn-form scale">Отправить запрос</button>
+        <img class="btn-close" src="./src/img/cancel%20(1).png" alt="img">
+    </div>
+</div>
+
+<div id="alert" class="alert">
+    <h2>Запрос отправлен! Я свяжусь с Вами в ближайшее время!</h2>
+    <img id="btn-alert" class="btn-alert-close" src="./src/img/cancel%20(1).png" alt="img">
+</div>
+
 <div class="background">
     <div class="content">
         <div class="main-box">
@@ -67,6 +84,7 @@
                             <img class="img" src="./src/img/img9.jpg" alt="baku">
                             <img class="img" src="./src/img/img10.jpg" alt="baku">
                         </div>
+                        <button data-tour="ТАЙНЫ СТАРОГО ГОРОДА" id="oldCity" class="btn btn-offer bg-wp">ЗАКАЗАТЬ "ТАЙНЫ СТАРОГО ГОРОДА"</button>
                     </div>
                     <!--                    View Tour-->
                     <p class="tour-title">Тур по Старому Городу. Обзорный тур на
@@ -111,6 +129,8 @@
                             <img class="img" src="./src/img/img1.jpg" alt="baku">
                             <img class="img" src="./src/img/img2.jpg" alt="baku">
                         </div>
+                        <button data-tour="ОБЗОРНЫЙ ТУР" id="viewTour" class="btn btn-offer bg-wp">ЗАКАЗАТЬ "ОБЗОРНЫЙ ТУР"</button>
+
                     </div>
                     <!--                    Oil Baku-->
                     <p class="tour-title">Нефтяной Баку</p>
@@ -187,6 +207,7 @@
                             <img class="img" src="./src/img/img3.jpg" alt="baku">
                             <img class="img" src="./src/img/img4.jpg" alt="baku">
                         </div>
+                        <button data-tour="НЕФТЯНОЙ БАКУ" id="oldBaku" class="btn btn-offer bg-wp">ЗАКАЗАТЬ "НЕФТЯНОЙ БАКУ"</button>
                     </div>
                     <!--                    Qobustan-->
                     <p class="tour-title">Гобустанский заповедник на машине</p>
@@ -230,6 +251,8 @@
                             <img class="img" src="./src/img/img5.jpg" alt="baku">
                             <img class="img" src="./src/img/img6.jpg" alt="baku">
                         </div>
+                        <button data-tour="ГОБУСТАНСКИЙ ЗАПОВЕДНИК" id="gobustan" class="btn btn-offer bg-wp">ЗАКАЗАТЬ "ГОБУСТАНСКИЙ ЗАПОВЕДНИК"</button>
+
                     </div>
                     <!--                     Atashgakh-->
                     <p class="tour-title">Атешгях и Янардаг</p>
@@ -258,6 +281,8 @@
                             <img class="img" src="./src/img/img7.jpg" alt="baku">
                             <img class="img" src="./src/img/img8.jpg" alt="baku">
                         </div>
+                        <button data-tour="АТЕШГЯХ И ЯНАРДАГ" id="atashgah" class="btn btn-offer bg-wp">ЗАКАЗАТЬ "АТЕШГЯХ И ЯНАРДАГ"</button>
+
                     </div>
 
                     <a href="whatsapp://send?phone=994517384242&text=Здравствуйте, хочу заказать экскурсию.">
@@ -287,6 +312,7 @@
         </div>
     </div>
 </div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="./src/js/main.js"></script>
 <script>
     window.onload = function () {
