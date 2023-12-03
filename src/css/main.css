@@ -417,6 +417,10 @@ i{
         height: 100%;
     }
 
+    .tour-sec-title{
+        font-size: 18px;
+    }
+
 
     .head>img{
         width: 130px;
