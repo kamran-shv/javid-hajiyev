@@ -43,40 +43,40 @@ let formToggle = function () {
 }
 
 
-offerButtons.forEach((item) => {
-    item.addEventListener('click', () => {
-        currentOffer = item.dataset.tour;
-        formToggle();
-    })
-})
-
-sendBtn.addEventListener('click', () => {
-    let body = `    Имя:     ${name.value} <br><br>
-        Дата:     ${data.value} <br><br>
-        Количество гостей:    ${value.value} <br><br>
-        Номер:     ${mob.value} <br><br>
-        Мейл:      ${mail.value}
-`.toString();
-    let subject = `${currentOffer}`.toString();
-    Email.send({
-        SecureToken: '09a85a1a-a9d1-4b3c-8298-2d0fc230cabf',
-        To: 'cavidhaciyev00@mail.ru, kamranelli@gmail.com',
-        From: "kamranelli@gmail.com",
-        Subject: subject,
-        Body: body
-    })
-        .then((message) => {
-            if (message.toString() == 'OK') {
-                banner.style.display = 'none';
-                alert.style.display = 'flex';
-            } else {
-                alert(message);
-            }
-        });
-})
-
-
-alertBtn.addEventListener('click', () =>{
-    alert.style.display = 'none';
-})
+// offerButtons.forEach((item) => {
+//     item.addEventListener('click', () => {
+//         currentOffer = item.dataset.tour;
+//         formToggle();
+//     })
+// })
+//
+// sendBtn.addEventListener('click', () => {
+//     let body = `    Имя:     ${name.value} <br><br>
+//         Дата:     ${data.value} <br><br>
+//         Количество гостей:    ${value.value} <br><br>
+//         Номер:     ${mob.value} <br><br>
+//         Мейл:      ${mail.value}
+// `.toString();
+//     let subject = `${currentOffer}`.toString();
+//     Email.send({
+//         SecureToken: '09a85a1a-a9d1-4b3c-8298-2d0fc230cabf',
+//         To: 'cavidhaciyev00@mail.ru, kamranelli@gmail.com',
+//         From: "kamranelli@gmail.com",
+//         Subject: subject,
+//         Body: body
+//     })
+//         .then((message) => {
+//             if (message.toString() == 'OK') {
+//                 banner.style.display = 'none';
+//                 alert.style.display = 'flex';
+//             } else {
+//                 alert(message);
+//             }
+//         });
+// })
+//
+//
+// alertBtn.addEventListener('click', () =>{
+//     alert.style.display = 'none';
+// })
 
